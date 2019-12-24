@@ -1,6 +1,6 @@
 docker build -t djam97/multi-client:latest -t djam97/multie-client:$SHA -f ./client/Dockerfile ./client
-docker build -t djam97/multi-server:latest djam97/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t djam97/multi-worker:latest djam97/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t djam97/multi-server:latest -t djam97/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t djam97/multi-worker:latest -t djam97/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push djam97/multi-client:latest
 docker push djam97/multi-server:latest
